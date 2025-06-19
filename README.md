@@ -1,1 +1,1 @@
-https://github.com/aquasecurity/trivy-db/releases/download/v1-2022100700/trivy-offline.db.tgz
+https://nhnent.dooray.com/share/drive-files/ajjt1imxmtj4.CD6zP9fcSvCz_CeyWNIsYg
