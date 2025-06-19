@@ -1,0 +1,238 @@
+{
+	// 파일 인코딩을 자동으로 추측 (예: EUC-KR, UTF-8 등)
+	"files.autoGuessEncoding": true,
+
+	// 에디터에 사용할 글꼴 (JetBrains Mono NL → Consolas → Courier New 순으로 fallback)
+	"editor.fontFamily": "'JetBrains Mono NL', Consolas, 'Courier New', monospace",
+
+	// 글자 크기
+	"editor.fontSize": 14,
+
+	// 줄 간격 (픽셀 단위)
+	"editor.lineHeight": 22,
+
+	// 글자 간격 (letter spacing)
+	"editor.letterSpacing": 0.5,
+
+	// 글꼴 합자(ligature) 활성화 (예: ===, => 같은 기호가 하나의 글리프로 표시됨)
+	"editor.fontLigatures": true,
+	
+	// Ctrl + 마우스 휠 스크롤로 폰트 크기 확대/축소 가능
+	"editor.mouseWheelZoom": true,
+
+	// VS Code 상단 제목 표시 형식: 현재 편집 중인 파일의 상대 경로
+	// 예: src/components/Button.js
+	"window.title": "${activeEditorMedium}",
+
+	// false로 설정 시, 파일을 클릭할 때마다 새 탭(에디터 창)으로 열림
+	"workbench.editor.enablePreview": false,
+
+	// Tab 키를 눌렀을 때 공백(Space) 대신 실제 Tab 문자를 삽입하도록 지정
+	"editor.insertSpaces": false,
+	// 기본 탭 크기 설정 (공백 수)
+	"editor.tabSize": 2,
+
+	"[shellscript]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 2
+	},
+
+	// 터미널 명령어 실행이 느려져서 아래와 같이 설정
+	"terminal.integrated.scrollback": 1000,
+	"terminal.integrated.gpuAcceleration": "off",
+	"terminal.integrated.shellIntegration.enabled": false,
+
+	// settings.json
+	"cSpell.words": [
+		"itsm",
+		"ITSM",
+		"cicd",
+		"SRNO",
+		"jeus",
+		"jenkinsci",
+		"Dskip",
+		"Dalt",
+	],
+
+	"files.associations": {
+    "*.sh": "shellscript" 
+	},
+
+  // Visuals
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredLightColorTheme": "Dark Github",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+
+  // Editor
+  "editor.accessibilitySupport": "off",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.hover.sticky": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "extensions.ignoreRecommendations": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.untrackedChanges": "separate",
+  "scm.diffDecorationsGutterWidth": 2,
+  "debug.onTaskErrors": "debugAnyway",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true,
+    "**/*history": true
+  },
+
+  // Extension configs
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+
+  // ESLint config: https://github.com/antfu/eslint-config
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "@stylistic/*",
+      "severity": "off"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "yaml": false
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+  "css.lint.hexColorLength": "ignore",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "workbench.editor.tabActionLocation": "right",
+  "window.zoomLevel": -1,
+  "workbench.editor.empty.hint": "hidden",
+  "java.debug.settings.jdwp.async": "off",
+  "java.debug.settings.debugSupportOnDecompiledSource": "off",
+  "java.autobuild.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "pasteImage.basePath": "${currentFileDir}/images",
+  "RainbowBrackets.depreciation-notice": false,
+  "terminal.integrated.profiles.windows": {
+    "GitBash-custom": {
+      "path": ["D:\\workspace_toto\\PortableGit\\bin\\bash.exe"],
+      "icon": "terminal-bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "GitBash-custom",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "editor.formatOnSave": true,
+  "[groovy]": {
+    "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
+  },
+  "explorer.confirmPasteNative": false,
+  "java.help.showReleaseNotes": false,
+}
+
